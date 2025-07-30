@@ -15,4 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          cd ${{ github.workspace }}
+          echo "start to list file"
+          cat 03.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
